@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scuderia Rosso | Ferrari F1 Fan Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#home" class="logo">
+                <span class="logo-shield">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <polygon points="50,5 95,25 95,60 50,95 5,60 5,25" fill="#111111"/>
+                        <polygon points="50,15 87,32 87,58 50,85 13,58 13,32" fill="#FFF200"/>
+                        <path d="M50 35 L58 60 L50 52 L42 60 Z" fill="#111111"/>
+                    </svg>
+                </span>
+                <span class="logo-text">SCUDERIA <strong>ROSSO</strong></span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">The Team</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#drivers">Drivers</a></li>
+                    <li><a href="#raceday">Race Day</a></li>
+                    <li><a href="#fanzone">Fan Zone</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO / MAIN INTRO ===== -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>FORZA <span class="accent">FERRARI</span></h1>
+                <p class="hero-sub">A tribute fan hub celebrating the passion, history, and speed of Scuderia Ferrari in Formula 1.</p>
+                <a href="#raceday" class="btn btn-primary">See Next Race Countdown</a>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section id="about" class="section section-alt">
+            <h2 class="section-title">The Team</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <svg class="icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="32" cy="32" r="30" fill="#DC0000"/>
+                        <path d="M32 14 L38 28 L52 30 L41 40 L44 54 L32 46 L20 54 L23 40 L12 30 L26 28 Z" fill="#FFF200"/>
+                    </svg>
+                    <h3>Founded 1929</h3>
+                    <p>Scuderia Ferrari is the oldest surviving and most successful team in Formula 1 history, founded by Enzo Ferrari.</p>
+                </div>
+                <div class="about-card">
+                    <svg class="icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect x="6" y="6" width="52" height="52" rx="10" fill="#111111"/>
+                        <text x="32" y="40" font-size="26" text-anchor="middle" fill="#FFF200" font-family="Orbitron, sans-serif" font-weight="800">16</text>
+                    </svg>
+                    <h3>16 World Titles</h3>
+                    <p>Ferrari holds the record for the most Constructors' Championships won by any team in F1 history.</p>
+                </div>
+                <div class="about-card">
+                    <svg class="icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect x="4" y="26" width="56" height="12" rx="6" fill="#DC0000"/>
+                        <circle cx="16" cy="44" r="8" fill="#111111"/>
+                        <circle cx="48" cy="44" r="8" fill="#111111"/>
+                    </svg>
+                    <h3>Maranello, Italy</h3>
+                    <p>Every Ferrari F1 car is designed and built at the legendary factory in Maranello, the heart of the Prancing Horse.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CARS SECTION ===== -->
+        <section id="cars" class="section">
+            <h2 class="section-title">Iconic Ferrari F1 Cars</h2>
+            <div class="card-grid">
+                <article class="car-card">
+                    <svg viewBox="0 0 200 90" class="car-svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect x="20" y="40" width="160" height="18" rx="8" fill="#DC0000"/>
+                        <polygon points="60,40 90,20 140,20 160,40" fill="#DC0000"/>
+                        <circle cx="55" cy="62" r="14" fill="#111111"/>
+                        <circle cx="150" cy="62" r="14" fill="#111111"/>
+                        <rect x="90" y="26" width="30" height="10" fill="#FFF200"/>
+                    </svg>
+                    <h3>312T (1975)</h3>
+                    <p>Niki Lauda's title-winning car, famous for its transverse gearbox and flat-12 engine.</p>
+                </article>
+                <article class="car-card">
+                    <svg viewBox="0 0 200 90" class="car-svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect x="20" y="40" width="160" height="18" rx="8" fill="#111111"/>
+                        <polygon points="60,40 90,18 140,18 160,40" fill="#DC0000"/>
+                        <circle cx="55" cy="62" r="14" fill="#111111"/>
+                        <circle cx="150" cy="62" r="14" fill="#111111"/>
+                        <rect x="30" y="46" width="20" height="6" fill="#FFF200"/>
+                    </svg>
+                    <h3>F2004</h3>
+                    <p>Widely regarded as one of the most dominant F1 cars ever, driven by Michael Schumacher.</p>
+                </article>
+                <article class="car-card">
+                    <svg viewBox="0 0 200 90" class="car-svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect x="20" y="42" width="160" height="16" rx="8" fill="#DC0000"/>
+                        <polygon points="55,42 95,16 135,16 165,42" fill="#111111"/>
+                        <circle cx="55" cy="63" r="14" fill="#111111"/>
+                        <circle cx="150" cy="63" r="14" fill="#111111"/>
+                        <rect x="95" y="20" width="10" height="20" fill="#FFF200"/>
+                    </svg>
+                    <h3>SF90</h3>
+                    <p>The 2019 challenger built to mark Ferrari's 90th anniversary in motorsport.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== DRIVERS SECTION ===== -->
+        <section id="drivers" class="section section-alt">
+            <h2 class="section-title">Legendary Drivers</h2>
+            <ul class="driver-list">
+                <li><strong>Michael Schumacher</strong> &mdash; 5 World Championships with Ferrari (2000&ndash;2004)</li>
+                <li><strong>Niki Lauda</strong> &mdash; 2-time World Champion, survivor of the 1976 Nürburgring crash</li>
+                <li><strong>Kimi Räikkönen</strong> &mdash; 2007 World Champion, fan favorite for his ice-cool radio calls</li>
+                <li><strong>Fernando Alonso</strong> &mdash; Brought Ferrari agonizingly close to the title in 2010 and 2012</li>
+                <li><strong>Charles Leclerc</strong> &mdash; Current era Ferrari driver and Monaco's own prodigy</li>
+            </ul>
+            <p class="learn-more">
+                Want the full history of the team? Visit the
+                <a href="https://www.ferrari.com/en-EN/formula1" target="_blank" rel="noopener">official Scuderia Ferrari F1 page</a>.
+            </p>
+        </section>
+
+        <!-- ===== RACE DAY / JS SECTION 1 & 2 ===== -->
+        <section id="raceday" class="section raceday">
+            <h2 class="section-title light">Race Day Central</h2>
+
+            <div class="raceday-grid">
+                <div class="widget-card">
+                    <h3>Pit Wall Live Time</h3>
+                    <p id="liveClock" class="display-value">--:--:--</p>
+                    <p class="widget-caption">Your local time, updating every second.</p>
+                </div>
+
+                <div class="widget-card">
+                    <h3>Countdown to Next Race</h3>
+                    <div id="countdown" class="countdown">
+                        <div class="time-block"><span id="cd-days">00</span><small>Days</small></div>
+                        <div class="time-block"><span id="cd-hours">00</span><small>Hours</small></div>
+                        <div class="time-block"><span id="cd-minutes">00</span><small>Minutes</small></div>
+                        <div class="time-block"><span id="cd-seconds">00</span><small>Seconds</small></div>
+                    </div>
+                    <p class="widget-caption" id="countdownCaption">Counting down to the next Grand Prix.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAN ZONE / JS SECTION 3 ===== -->
+        <section id="fanzone" class="section">
+            <h2 class="section-title">Fan Zone</h2>
+            <div class="fanzone-grid">
+                <div class="widget-card fact-card">
+                    <h3>Random Ferrari Fact</h3>
+                    <p id="factDisplay" class="fact-text">Click the button to reveal a Ferrari F1 fact!</p>
+                    <button id="factBtn" class="btn btn-secondary">Give Me a Fact</button>
+                </div>
+
+                <div class="widget-card theme-card">
+                    <h3>Track Mode</h3>
+                    <p class="widget-caption">Switch between Day Race and Night Race themes.</p>
+                    <button id="themeBtn" class="btn btn-outline">Toggle Night Race Mode</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="year"></span> Scuderia Rosso Fan Hub. Built by Shamier G. Repalda.</p>
+            <p class="footer-note">This is an unofficial, non-commercial fan project made for a web development activity. Ferrari and Scuderia Ferrari are trademarks of their respective owners.</p>
+            <a href="#home" class="back-to-top">Back to Top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
