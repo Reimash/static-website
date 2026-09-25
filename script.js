@@ -1,11 +1,3 @@
-/* =========================================================
-   SCUDERIA ROSSO - Ferrari F1 Fan Hub
-   JavaScript
-   ========================================================= */
-
-/* -------------------------------------------------
-   0. Footer year + mobile nav toggle
-------------------------------------------------- */
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const navToggle = document.getElementById("navToggle");
@@ -15,10 +7,6 @@ navToggle.addEventListener("click", function () {
     mainNav.classList.toggle("open");
 });
 
-/* -------------------------------------------------
-   1. JS REQUIREMENT #1 - LIVE TIME COUNTER
-   Displays the current local time and updates every second.
-------------------------------------------------- */
 function updateLiveClock() {
     const now = new Date();
 
@@ -38,17 +26,8 @@ function updateLiveClock() {
 updateLiveClock();
 setInterval(updateLiveClock, 1000);
 
-/* -------------------------------------------------
-   2. JS REQUIREMENT #2 - COUNTDOWN TIMER
-   Counts down to the next Grand Prix race date.
-
-   NOTE: Update RACE_DATE below to the actual date of the
-   next race you want to feature.
-------------------------------------------------- */
 const RACE_NAME = "Next Grand Prix";
-const RACE_DATE = new Date();
-RACE_DATE.setDate(RACE_DATE.getDate() + 30); // demo target: 30 days from now
-RACE_DATE.setHours(14, 0, 0, 0);
+const RACE_DATE = new Date(2026, 9, 4, 15, 0, 0); 
 
 document.getElementById("countdownCaption").textContent =
     `Counting down to the ${RACE_NAME} \u2014 ${RACE_DATE.toDateString()}`;
@@ -79,10 +58,6 @@ function updateCountdown() {
 updateCountdown();
 const countdownInterval = setInterval(updateCountdown, 1000);
 
-/* -------------------------------------------------
-   3. JS REQUIREMENT #3 - INTERACTIVE BUTTON
-   Displays a random Ferrari F1 fact on click.
-------------------------------------------------- */
 const ferrariFacts = [
     "Scuderia Ferrari is the only team to have competed in every Formula 1 season since the championship began in 1950.",
     "Ferrari's iconic red color is often called 'Rosso Corsa', Italian for 'racing red'.",
@@ -102,10 +77,7 @@ factBtn.addEventListener("click", function () {
     factDisplay.textContent = ferrariFacts[randomIndex];
 });
 
-/* -------------------------------------------------
-   4. BONUS FEATURE - NIGHT RACE / DAY RACE THEME TOGGLE
-   Switches the page into a darker "night race" theme.
-------------------------------------------------- */
+
 const themeBtn = document.getElementById("themeBtn");
 
 themeBtn.addEventListener("click", function () {
